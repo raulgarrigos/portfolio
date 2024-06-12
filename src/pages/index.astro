@@ -7,6 +7,8 @@ import GitHubIcon from "../components/icons/GitHub.astro";
 import MailIcon from "../components/icons/Mail.astro";
 import SocialPill from "../components/SocialPill.astro";
 import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
 ---
 
 <Layout
@@ -15,7 +17,7 @@ import Experience from "../components/Experience.astro";
   ,
 >
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <SectionContainer class="py-44 pb-24">
       <img
         class="rounded-full size-12 mb-4"
         src="https://media.licdn.com/dms/image/D4D03AQGETkvYZkCLUg/profile-displayphoto-shrink_200_200/0/1705148759885?e=2147483647&v=beta&t=mhjcQ48U9ZXZTfi9bBNU0SDyblDFKlVp1jgBwYyWPus"
@@ -54,9 +56,14 @@ import Experience from "../components/Experience.astro";
           raul.garrigos91@gmail.com
         </SocialPill>
       </nav>
-    </section>
-    <section>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Briefcase class="size-7" />
+        Experiencia laboral
+      </h2>
       <Experience />
-    </section>
+    </SectionContainer>
   </main>
 </Layout>
