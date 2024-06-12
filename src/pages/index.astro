@@ -1,10 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <h1>Portfolio</h1>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src="https://media.licdn.com/dms/image/D4D03AQGETkvYZkCLUg/profile-displayphoto-shrink_200_200/0/1705148759885?e=2147483647&v=beta&t=mhjcQ48U9ZXZTfi9bBNU0SDyblDFKlVp1jgBwYyWPus"
+        alt="raul garrigos photo"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        Hola, soy Raül <a
+          href="https://www.linkedin.com/in/raul-garrigos/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Available for hire</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl opacity-80">
+        +7 años de experiencia como Content y Catalog Specialist. Un día decidí
+        cambiar de rumbo y estudiar programación web. De Barcelona.
+      </h2>
+
+      <ul></ul>
+    </section>
   </main>
 </Layout>
