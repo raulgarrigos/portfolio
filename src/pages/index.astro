@@ -16,14 +16,16 @@ import Briefcase from "../components/icons/Briefcase.astro";
   description="Contrata a Raül Garrigós para desarrollar tu aplicación web. Especializado en crear aplicaciones FullStack con JavaScript, MongoDB, Express, React y NodeJs"
   ,
 >
-  <main>
+  <main class="px-4">
     <SectionContainer class="py-44 pb-24">
       <img
         class="rounded-full size-12 mb-4"
         src="https://media.licdn.com/dms/image/D4D03AQGETkvYZkCLUg/profile-displayphoto-shrink_200_200/0/1705148759885?e=2147483647&v=beta&t=mhjcQ48U9ZXZTfi9bBNU0SDyblDFKlVp1jgBwYyWPus"
         alt="raul garrigos photo"
       />
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
         Hola, soy Raül <a
           href="https://www.linkedin.com/in/raul-garrigos/"
           target="_blank"
@@ -33,7 +35,7 @@ import Briefcase from "../components/icons/Briefcase.astro";
           <Badge>Available for hire</Badge>
         </a>
       </h1>
-      <h2 class="text-2xl text-wrap">
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
         <span>+7 años de experiencia como Content y Catalog Specialist.</span
         ><span class="text-yellow-200/90">
           Un día decidí cambiar de rumbo y estudiar Desarrollo Web.
@@ -42,17 +44,17 @@ import Briefcase from "../components/icons/Briefcase.astro";
         <span class="opacity-75">Buscando mi primera oportunidad.</span>
       </h2>
 
-      <nav class="flex gap-x-4 mt-8">
+      <nav class="flex gap-4 mt-8 flex-wrap">
         <SocialPill href="https://www.linkedin.com/in/raul-garrigos/">
-          <LinkedInIcon class="size-6" />
+          <LinkedInIcon class="size-4 md:size-6" />
           LinkedIn
         </SocialPill>
         <SocialPill href="https://github.com/raulgarrigos">
-          <GitHubIcon class="size-6" />
+          <GitHubIcon class="size-4 md:size-6" />
           GitHub
         </SocialPill>
         <SocialPill href="mailto:raul.garrigos91@gmail.com">
-          <MailIcon class="size-6" />
+          <MailIcon class="size-4 md:size-6" />
           raul.garrigos91@gmail.com
         </SocialPill>
       </nav>
