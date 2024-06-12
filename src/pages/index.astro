@@ -9,6 +9,8 @@ import SocialPill from "../components/SocialPill.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Briefcase from "../components/icons/Briefcase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
@@ -17,7 +19,7 @@ import Briefcase from "../components/icons/Briefcase.astro";
   ,
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-24">
+    <SectionContainer class="py-44 pb-32">
       <img
         class="rounded-full size-12 mb-4"
         src="https://media.licdn.com/dms/image/D4D03AQGETkvYZkCLUg/profile-displayphoto-shrink_200_200/0/1705148759885?e=2147483647&v=beta&t=mhjcQ48U9ZXZTfi9bBNU0SDyblDFKlVp1jgBwYyWPus"
@@ -60,8 +62,16 @@ import Briefcase from "../components/icons/Briefcase.astro";
       </nav>
     </SectionContainer>
 
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+
     <SectionContainer id="experiencia">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <Briefcase class="size-7" />
         Experiencia laboral
       </h2>
