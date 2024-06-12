@@ -2,13 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import SocialPill from "../components/SocialPill.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout
+  title="Portfolio Raül Garrigós | Desarrollador y Programador Web FullStack"
+  description="Contrata a Raül Garrigós para desarrollar tu aplicación web. Especializado en crear aplicaciones FullStack con JavaScript, MongoDB, Express, React y NodeJs"
+  ,
+>
   <main>
     <section class="w-full lg:w-[740px] mx-auto py-44">
       <img
-        class="rounded-full w-12 h-12 mb-4"
+        class="rounded-full size-12 mb-4"
         src="https://media.licdn.com/dms/image/D4D03AQGETkvYZkCLUg/profile-displayphoto-shrink_200_200/0/1705148759885?e=2147483647&v=beta&t=mhjcQ48U9ZXZTfi9bBNU0SDyblDFKlVp1jgBwYyWPus"
         alt="raul garrigos photo"
       />
@@ -22,12 +30,29 @@ import Badge from "../components/Badge.astro";
           <Badge>Available for hire</Badge>
         </a>
       </h1>
-      <h2 class="text-xl opacity-80">
-        +7 años de experiencia como Content y Catalog Specialist. Un día decidí
-        cambiar de rumbo y estudiar programación web. De Barcelona.
+      <h2 class="text-2xl text-wrap">
+        <span>+7 años de experiencia como Content y Catalog Specialist.</span
+        ><span class="text-yellow-200/90">
+          Un día decidí cambiar de rumbo y estudiar Desarrollo Web.
+        </span>
+        <span class="text-red-200/90"> De Barcelona.</span>
+        <span class="opacity-75">Buscando mi primera oportunidad.</span>
       </h2>
 
-      <ul></ul>
+      <nav class="flex gap-x-4 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/raul-garrigos/">
+          <LinkedInIcon class="size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/raulgarrigos">
+          <GitHubIcon class="size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:raul.garrigos91@gmail.com">
+          <MailIcon class="size-6" />
+          raul.garrigos91@gmail.com
+        </SocialPill>
+      </nav>
     </section>
   </main>
 </Layout>
