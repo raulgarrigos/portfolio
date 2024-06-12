@@ -3,28 +3,44 @@ import ExperienceItem from "./ExperienceItem.astro";
 
 const experience = [
   {
-    date: "February 2022",
-    title: "Application UI code in Tailwind CSS",
+    date: "Octubre 2023 - Diciembre 2023",
+    title: "FullStack Web Development",
+    business: "Ironhack",
     description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages",
-    link: "#",
+      "Bootcamp intensivo de 9 semanas (+400h). Completados 3 proyectos en JavaScript con el objetivo final de realizar una web app con MongoDB, Express, ReactJS y NodeJs. ",
   },
   {
-    date: "March 2022",
-    title: "Marketing UI design in Figma",
+    date: "Marzo 2021 - Septiembre 2023",
+    title: "Catalog Specialist",
+    business: "Promofarma",
     description:
-      "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project",
+      "Gestión del catálogo web para un e-commerce de productos parafarmacéuticos, incluyendo la revisión de nombres, categorías, imágenes, así como la incorporación de catálogos externos.",
   },
   {
-    date: "April 2022",
-    title: "E-Commerce UI code in Tailwind CSS",
+    date: "Septiembre 2020 - Febrero 2021",
+    title: "Content Marketing Manager",
+    business: "ErsaxTrade",
     description:
-      "Get started with dozens of web components and interactive elements built on top of Tailwind CSS",
+      "Gestión del contenido de tres marcas diferentes para una misma empresa, incluyendo contenido web SEO-driven, blog, marketing e-mails, presentaciones a potenciales clientes (B2B).",
+  },
+  {
+    date: "Junio 2019 - Septiembre 2020",
+    title: "Affiliates Catalog Editor",
+    business: "Drinks&Co",
+    description:
+      "Gestión del catálogo web para un e-commerce de productos alcohólicos. Revisión de feeds y creación de reglas RegEx para implementar cambios masivos. Trabajo codo a codo con el tech team.",
+  },
+  {
+    date: "Agosto 2017 - Mayo 2019",
+    title: "Content Specialist",
+    business: "MediaMarkt",
+    description:
+      "Creación de fichas de producto para la página web. Mejora del SEO de los productos. Definir KPIs para analizar la calidad de la página. Migración de todo el contenido a la plataforma alemana (PEx).",
   },
 ];
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
+<ol class="relative border-s border-gray-200 ml-3 px-2 dark:border-gray-700">
   {
     experience.map((experience, index) => (
       <li class="mb-10 ms-6">

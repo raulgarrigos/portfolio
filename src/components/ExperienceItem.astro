@@ -2,11 +2,12 @@
 interface Props {
   title: string;
   description: string;
+  business: string;
   link?: string;
   date: string;
   isLatest: boolean;
 }
-const { title, description, link, date, isLatest } = Astro.props;
+const { title, description, link, business, date, isLatest } = Astro.props;
 ---
 
 <span
@@ -24,23 +25,26 @@ const { title, description, link, date, isLatest } = Astro.props;
     ></path>
   </svg>
 </span>
-<h3
-  class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"
->
-  {title}
-  {
-    isLatest && (
-      <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">
-        Latest
-      </span>
-    )
-  }
-</h3>
 <time
-  class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+  class="block mb-2 text-sm font-normal leading-none text-blue-200/80 dark:text-gray-500"
   >{date}</time
 >
-<p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+<h3
+  class="flex items-center mb-1 mt-3 text-lg font-semibold text-yellow-200 dark:text-white"
+>
+  {title}
+  <!-- {
+    isLatest && (
+      <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">
+        Actualmente
+      </span>
+    )
+  } -->
+  <h3 class="text-sm text-red-200/80 mb-2">
+    {business}
+  </h3>
+</h3>
+<p class="mb-4 text-base font-normal text-gray-200 text-pretty">
   {description}
 </p>
 {
