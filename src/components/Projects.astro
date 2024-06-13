@@ -2,30 +2,86 @@
 import HTML from "./icons/HTML.astro";
 import JavaScript from "./icons/JavaScript.astro";
 import CSS from "./icons/CSS.astro";
+import Bootstrap from "./icons/Bootstrap.astro";
+import React from "./icons/React.astro";
+import MongoDB from "./icons/MongoDB.astro";
+import NodeJS from "./icons/NodeJS.astro";
+import TailwindCSS from "./icons/TailwindCSS.astro";
 
 const tags = {
   HTML: {
     name: "HTML",
-    class: "bg-black text-white",
+    class: "bg-[#E54C21] text-white font-semibold",
     icon: HTML,
   },
   JavaScript: {
     name: "JavaScript",
-    class: "bg-black text-white",
+    class: "bg-[#EFD81D] text-black font-semibold",
     icon: JavaScript,
   },
   CSS: {
     name: "CSS",
-    class: "bg-black text-white",
+    class: "bg-[#264DE4] text-white font-semibold",
     icon: CSS,
+  },
+  Bootstrap: {
+    name: "Bootstrap",
+    class: "bg-[#7B11F3] text-white font-semibold",
+    icon: Bootstrap,
+  },
+  React: {
+    name: "React",
+    class: "bg-[#0C9FCB] text-white font-semibold",
+    icon: React,
+  },
+  MongoDB: {
+    name: "MongoDB",
+    class: "bg-[#006849] text-white font-semibold",
+    icon: MongoDB,
+  },
+  NodeJS: {
+    name: "NodeJS",
+    class: "bg-[#68A063] text-white font-semibold",
+    icon: NodeJS,
+  },
+  TailwindCSS: {
+    name: "TailwindCSS",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: TailwindCSS,
   },
 };
 
 const projects = [
   {
+    title: "Clapperboard",
+    description:
+      "Proyecto final para el bootcamp de Ironhack. Página web para los amantes del cine para que puedan escribir reviews, crear listas personalizadas de películas y ver listas de otros usuarios. Conectada con una API.",
+    link: "https://clapperboard-app.netlify.app/",
+    github: "https://github.com/raulgarrigos/clapperboard-client",
+    image: "/projects/clapperboard.webp",
+    tags: [
+      tags.HTML,
+      tags.CSS,
+      tags.JavaScript,
+      tags.NodeJS,
+      tags.React,
+      tags.MongoDB,
+      tags.Bootstrap,
+    ],
+  },
+  {
+    title: "Marketplayr",
+    description:
+      "Segundo proyecto para el bootcamp de Ironhack. Creada la página para un marketplace sobre videojuegos para que los usuarios puedan comprar y vender videojuegos y así estimular el mercado de videojuegos físico.",
+    link: "https://marketplayr.adaptable.app/",
+    github: "https://github.com/raulgarrigos/marketplayr",
+    image: "/projects/marketplayr.webp",
+    tags: [tags.HTML, tags.CSS, tags.JavaScript, tags.NodeJS, tags.MongoDB],
+  },
+  {
     title: "The Cat Thief",
     description:
-      "First project for the Web Development Ironhack Bootcamp. Classic shoot'em up videogame where you can control a cute cat. You'll have to avoid objects/shoot them and gain points to win.",
+      "Primer proyecto para el bootcamp de Ironhack. Videojuego shoot'em up clásico en el que puedes controlar un gato. Cuenta con 5 niveles de dificultad a medida que avanzas. Tu objetivo es esquivar/disparar los obstáculos para ganar puntos y llegar a los 100.",
     link: "https://raulgarrigos.github.io/the-cat-thief/",
     github: "https://github.com/raulgarrigos/the-cat-thief",
     image: "/projects/thecatthief.webp",
@@ -39,11 +95,11 @@ const projects = [
     <article>
       <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
       <p class="text-lg mb-4 text-pretty">{description}</p>
-      <ul class="flex gap-x-2 flex-row">
+      <ul class="flex gap-x-3 flex-row">
         {tags.map((tag) => (
           <li>
             <span
-              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-2 px-3`}
+              class={`flex gap-x-1 rounded-full text-xs ${tag.class} py-2 px-3`}
             >
               <tag.icon class="size-4" />
               {tag.name}
@@ -52,7 +108,7 @@ const projects = [
         ))}
       </ul>
       <img
-        class="rounded shadow-2xl shadow-white/10 mt-2"
+        class="rounded shadow-2xl shadow-white/10 mt-5 mb-10"
         src={image}
         alt={`Captura de pantalla del proyecto ${title}`}
       />
