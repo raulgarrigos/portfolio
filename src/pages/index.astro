@@ -63,28 +63,36 @@ import AboutMe from "../components/AboutMe.astro";
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="proyectos">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <CodeIcon class="size-7" />
-        Proyectos
-      </h2>
-      <Projects />
-    </SectionContainer>
-
-    <SectionContainer id="experiencia">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <Briefcase class="size-7" />
-        Experiencia laboral
-      </h2>
-      <Experience />
-    </SectionContainer>
-
-    <SectionContainer id="sobre-mí">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <Briefcase class="size-7" />
-        Sobre mí
-      </h2>
-      <AboutMe />
-    </SectionContainer>
+    <div class="space-y-24">
+      <SectionContainer id="proyectos">
+        <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white/80 dark:text-white"
+      >
+          <CodeIcon class="size-7" />
+          Proyectos
+        </h2>
+        <Projects />
+      </SectionContainer>
+  
+      <SectionContainer id="experiencia">
+        <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white/80 dark:text-white"
+      >
+          <Briefcase class="size-7" />
+          Experiencia laboral
+        </h2>
+        <Experience />
+      </SectionContainer>
+  
+      <SectionContainer id="sobre-mí">
+        <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white/80 dark:text-white"
+      >
+          <Briefcase class="size-7" />
+          Sobre mí
+        </h2>
+        <AboutMe />
+      </SectionContainer>
+    </div>
   </main>
 </Layout>
