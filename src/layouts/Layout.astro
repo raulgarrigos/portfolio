@@ -48,6 +48,14 @@ const { title, description } = Astro.props;
         min-height: 100vh;
         overscroll-behavior: none;
       }
+
+      @media (max-width: 768px) {
+        body {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+        }
+      }
     </style>
   </body>
 </html>
