@@ -1,0 +1,204 @@
+---
+import HTML from "./logos/HTMLLogo.astro";
+import JavaScript from "./logos/JavaScriptLogo.astro";
+import CSS from "./logos/CSSLogo.astro";
+import Bootstrap from "./logos/BootstrapLogo.astro";
+import React from "./logos/ReactLogo.astro";
+import MongoDB from "./logos/MongoDBLogo.astro";
+import NodeJS from "./logos/NodeJSLogo.astro";
+import TailwindCSS from "./logos/TailwindCSSLogo.astro";
+import AstroLogo from "./logos/AstroLogo.astro";
+import ExpressJS from "./logos/ExpressJSLogo.astro";
+import Python from "./logos/PythonLogo.astro";
+import TypeScript from "./logos/TypeScriptLogo.astro";
+import Docker from "./logos/DockerLogo.astro";
+import PHP from "./logos/PHPLogo.astro";
+import Laravel from "./logos/LaravelLogo.astro";
+import MySQL from "./logos/MySQLLogo.astro";
+import NextJS from "./logos/NextJSLogo.astro";
+import SASS from "./logos/SASSLogo.astro";
+import Git from "./logos/GitLogo.astro";
+import GitHub from "./logos/GitHubLogo.astro";
+import Npm from "./logos/NpmLogo.astro";
+import VSCode from "./logos/VSCodeLogo.astro";
+import Vue from "./logos/VueLogo.astro";
+import Angular from "./logos/AngularLogo.astro";
+
+const tags = {
+  HTML: {
+    name: "HTML",
+    class: "bg-[#E54C21] text-white font-semibold",
+    icon: HTML,
+  },
+  JavaScript: {
+    name: "JavaScript",
+    class: "bg-[#EFD81D] text-black font-semibold",
+    icon: JavaScript,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#264DE4] text-white font-semibold",
+    icon: CSS,
+  },
+  Bootstrap: {
+    name: "Bootstrap",
+    class: "bg-[#7B11F3] text-white font-semibold",
+    icon: Bootstrap,
+  },
+  React: {
+    name: "React",
+    class: "bg-[#0C9FCB] text-white font-semibold",
+    icon: React,
+  },
+  MongoDB: {
+    name: "MongoDB",
+    class: "bg-[#006849] text-white font-semibold",
+    icon: MongoDB,
+  },
+  NodeJS: {
+    name: "NodeJS",
+    class: "bg-[#68A063] text-white font-semibold",
+    icon: NodeJS,
+  },
+  TailwindCSS: {
+    name: "TailwindCSS",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: TailwindCSS,
+  },
+  AstroLogo: {
+    name: "Astro",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: AstroLogo,
+  },
+  ExpressJS: {
+    name: "ExpressJS",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: ExpressJS,
+  },
+  Python: {
+    name: "Python",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: Python,
+  },
+  TypeScript: {
+    name: "TypeScript",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: TypeScript,
+  },
+  Docker: {
+    name: "Docker",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: Docker,
+  },
+  PHP: {
+    name: "PHP",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: PHP,
+  },
+  Laravel: {
+    name: "Laravel",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: Laravel,
+  },
+  MySQL: {
+    name: "MySQL",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: MySQL,
+  },
+  NextJS: {
+    name: "NextJS",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: NextJS,
+  },
+  SASS: {
+    name: "SASS",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: SASS,
+  },
+  Git: {
+    name: "Git",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: Git,
+  },
+  GitHub: {
+    name: "GitHub",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: GitHub,
+  },
+  npm: {
+    name: "npm",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: Npm,
+  },
+  VSCode: {
+    name: "VSCode",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: VSCode,
+  },
+  Vue: {
+    name: "Vue",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: Vue,
+  },
+  Angular: {
+    name: "Angular",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: Angular,
+  },
+};
+
+const stacks = [
+  {
+    title: "Frontend",
+    tags: [
+      tags.HTML,
+      tags.CSS,
+      tags.JavaScript,
+      tags.React,
+      tags.TailwindCSS,
+      tags.AstroLogo,
+    ],
+  },
+  {
+    title: "Backend",
+    tags: [tags.JavaScript, tags.NodeJS, tags.ExpressJS, tags.MongoDB],
+  },
+  {
+    title: "Interesado",
+    tags: [
+      tags.Vue,
+      tags.Angular,
+      tags.Python,
+      tags.TypeScript,
+      tags.Docker,
+      tags.PHP,
+      tags.Laravel,
+      tags.NextJS,
+      tags.MySQL,
+      tags.SASS,
+    ],
+  },
+  {
+    title: "Herramientas",
+    tags: [tags.Git, tags.GitHub, tags.npm, tags.VSCode],
+  },
+];
+---
+
+<div>
+  {
+    stacks.map(({ title, tags }) => (
+      <article>
+        <h3>{title}</h3>
+        <ul>
+          {tags.map((tag) => (
+            <li>
+              <tag.icon class="size-10" />
+              {tag.name}
+            </li>
+          ))}
+        </ul>
+      </article>
+    ))
+  }
+</div>
