@@ -1,5 +1,5 @@
 ---
-import LinkInLine from "./LinkInLine.astro"
+import LinkInLine from "./LinkInLine.astro";
 
 interface Props {
   title: string;
@@ -13,10 +13,10 @@ const { title, description, link, company, date, isLatest } = Astro.props;
 ---
 
 <span
-  class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+  class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white"
 >
   <svg
-    class="w-2.5 h-2.5 text-purple-800 dark:text-purple-300"
+    class="w-2.5 h-2.5 text-purple-800"
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
@@ -27,17 +27,14 @@ const { title, description, link, company, date, isLatest } = Astro.props;
     ></path>
   </svg>
 </span>
-<time
-  class="block mb-2 text-sm font-normal leading-none text-blue-200/80 dark:text-gray-500"
+<time class="block mb-2 text-sm font-normal leading-none text-blue-200/80"
   >{date}</time
 >
-<h3
-  class="flex items-center mb-1 mt-3 text-lg font-semibold text-yellow-200 dark:text-white"
->
+<h3 class="flex items-center mb-1 mt-3 text-lg font-semibold text-yellow-200">
   {title}
   <!-- {
     isLatest && (
-      <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">
+      <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">
         Actualmente
       </span>
     )
