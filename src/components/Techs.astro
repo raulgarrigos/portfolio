@@ -185,16 +185,18 @@ const stacks = [
 ];
 ---
 
-<div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
   {
     stacks.map(({ title, tags }) => (
-      <article>
-        <h3>{title}</h3>
-        <ul>
+      <article class="relative bg-[#43229C]/20 p-6 rounded shadow-white/10 shadow-xl">
+        <h3 class="text-center mb-8 text-3xl font-semibold text-yellow-200 mb-2">
+          {title}
+        </h3>
+        <ul class="grid grid-cols-3 gap-4">
           {tags.map((tag) => (
-            <li>
-              <tag.icon class="size-10" />
-              {tag.name}
+            <li class="rounded-2xl group flex flex-col justify-center items-center">
+              <tag.icon class="size-12 mb-2" />
+              <span class="text-sm"> {tag.name}</span>
             </li>
           ))}
         </ul>
