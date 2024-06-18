@@ -1,48 +1,60 @@
 ---
 const personalImageAlt = "Raül Garrigós";
+import SocialPill from "../components/SocialPill.astro";
 ---
 
-<article
-  class="flex flex-col items-center justify-center gap-8 text-gray-700 md:flex-row"
->
-  <div class="text-white text-pretty order-2 md:order-1">
-    <p>
-      ¡Soy Raül! Estudié Periodismo y Fotografía Artística y, tras años
-      ejerciendo como Content y Catalog Specialist en diferentes e-commerces, me
-      pasé al mundo de la Programación Web. <span class="text-yellow-200/90">
-        Mi camino es una fusión perfecta entre tecnología y creatividad.
-      </span>
-    </p>
-    <br />
-    <p>
-      Tengo experiencia programando con <span class="text-yellow-200/90"
-        >JavaScript (ES6)
-      </span>, construyendo interfaces dinámicas con <span
-        class="text-yellow-200/90"
-        >React
-      </span> y desarrollando servidores con <span class="text-yellow-200/90"
-        >NodeJS y Express
-      </span>. También he trabajado con bases de datos NoSQL como <span
-        class="text-yellow-200/90"
-        >MongoDB
-      </span>. Pero tengo ganas de seguir ampliando mis conocimientos tanto en
-      lenguajes como en tecnologías.
-    </p>
-    <br />
-    <p>
-      Actualmente, estoy puliendo mis habilidades de programación dedicándome a
-      proyectos personales mientras busco oportunidades como Developer. <span
-        class="text-yellow-200/90">Siempre preparado para el próximo reto.</span
-      >
-    </p>
+<article class="w-full flex flex-col items-center justify-center gap-8">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+    <div
+      class="col-span-1 md:col-span-2 text-white text-pretty order-2 md:order-1"
+    >
+      <p>
+        ¡Soy Raül! Estudié Periodismo y Fotografía Artística y, tras años
+        ejerciendo como Content y Catalog Specialist en diferentes e-commerces,
+        me pasé al mundo de la Programación Web. <span
+          class="text-yellow-200/90"
+        >
+          Mi camino es una fusión perfecta entre tecnología y creatividad.
+        </span>
+      </p>
+      <br />
+      <p>
+        Tengo experiencia programando con <span class="text-yellow-200/90"
+          >JavaScript (ES6)
+        </span>, construyendo interfaces dinámicas con <span
+          class="text-yellow-200/90"
+          >React
+        </span> y desarrollando servidores con <span class="text-yellow-200/90"
+          >NodeJS y Express
+        </span>. También he trabajado con bases de datos NoSQL como <span
+          class="text-yellow-200/90"
+          >MongoDB
+        </span>. Pero tengo ganas de seguir ampliando mis conocimientos tanto en
+        lenguajes como en tecnologías.
+      </p>
+      <br />
+      <p>
+        Actualmente, estoy puliendo mis habilidades de programación dedicándome
+        a proyectos personales mientras busco oportunidades como Developer. <span
+          class="text-yellow-200/90"
+          >Siempre preparado para el próximo reto.</span
+        >
+      </p>
+    </div>
+    <img
+      width="200"
+      height="200"
+      src="raulgarrigos.webp"
+      alt={personalImageAlt}
+      class="order-1 object-cover w-64 h-full p-2 mx-auto md:order-2 md:w-full lg:p-2 lg:w-64 rotate-3 aspect-square rounded-2xl bg-black/30 ring-1 ring-yellow-200/80"
+      style="object-position: 50% 50%"
+    />
   </div>
-
-  <img
-    width="200"
-    height="200"
-    src="raulgarrigos.webp"
-    alt={personalImageAlt}
-    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 ring-1 ring-black/7"
-    style="object-position: 50% 50%"
-  />
+  <div class="">
+    <SocialPill
+      href="https://drive.google.com/file/d/1bq5-sfvB16nWxvCiRTO2jtfuMvYpI7Cj/view"
+    >
+      Currículum
+    </SocialPill>
+  </div>
 </article>
