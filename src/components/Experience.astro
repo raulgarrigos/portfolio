@@ -1,49 +1,49 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro";
+import ExperienceItem from './ExperienceItem.astro'
 
 const experience = [
   {
-    date: "Octubre 2023 - Diciembre 2023",
-    title: "FullStack Web Development",
-    company: "Ironhack",
+    date: 'Octubre 2023 - Diciembre 2023',
+    title: 'FullStack Web Development',
+    company: 'Ironhack',
     description:
-      "Bootcamp intensivo de 9 semanas (+400h). Completados 3 proyectos en JavaScript con el objetivo final de realizar una web app con MongoDB, Express, ReactJS y NodeJs. ",
+      'Bootcamp intensivo de 9 semanas (+400h). Completados 3 proyectos en JavaScript con el objetivo final de realizar una web app con MongoDB, Express, ReactJS y NodeJs. '
   },
   {
-    date: "Marzo 2021 - Septiembre 2023",
-    title: "Catalog Specialist",
-    company: "Promofarma",
+    date: 'Marzo 2021 - Septiembre 2023',
+    title: 'Catalog Specialist',
+    company: 'Promofarma',
     description:
-      "Gestión del catálogo web para un e-commerce de productos parafarmacéuticos, incluyendo la revisión de nombres, categorías, imágenes, así como la incorporación de catálogos externos.",
+      'Gestión del catálogo web para un e-commerce de productos parafarmacéuticos, incluyendo la revisión de nombres, categorías, imágenes, así como la incorporación de catálogos externos.'
   },
   {
-    date: "Septiembre 2020 - Febrero 2021",
-    title: "Content Marketing Manager",
-    company: "ErsaxTrade",
+    date: 'Septiembre 2020 - Febrero 2021',
+    title: 'Content Marketing Manager',
+    company: 'ErsaxTrade',
     description:
-      "Gestión del contenido de tres marcas diferentes para una misma empresa, incluyendo contenido web SEO-driven, blog, marketing e-mails, presentaciones a potenciales clientes (B2B).",
+      'Gestión del contenido de tres marcas diferentes para una misma empresa, incluyendo contenido web SEO-driven, blog, marketing e-mails, presentaciones a potenciales clientes (B2B).'
   },
   {
-    date: "Junio 2019 - Septiembre 2020",
-    title: "Affiliates Catalog Editor",
-    company: "Drinks&Co",
+    date: 'Junio 2019 - Septiembre 2020',
+    title: 'Affiliates Catalog Editor',
+    company: 'Drinks&Co',
     description:
-      "Gestión del catálogo web para un e-commerce de productos alcohólicos. Revisión de feeds y creación de reglas RegEx para implementar cambios masivos. Trabajo codo a codo con el tech team.",
+      'Gestión del catálogo web para un e-commerce de productos alcohólicos. Revisión de feeds y creación de reglas RegEx para implementar cambios masivos. Trabajo codo a codo con el tech team.'
   },
   {
-    date: "Agosto 2017 - Mayo 2019",
-    title: "Content Specialist",
-    company: "MediaMarkt",
+    date: 'Agosto 2017 - Mayo 2019',
+    title: 'Content Specialist',
+    company: 'MediaMarkt',
     description:
-      "Creación de fichas de producto para la página web. Mejora del SEO de los productos. Definir KPIs para analizar la calidad de la página. Migración de todo el contenido a la plataforma alemana (PEx).",
-  },
-];
+      'Creación de fichas de producto para la página web. Mejora del SEO de los productos. Definir KPIs para analizar la calidad de la página. Migración de todo el contenido a la plataforma alemana (PEx).'
+  }
+]
 ---
 
-<ol class="relative border-s border-gray-200 ml-3 px-2">
+<ol class='relative border-s border-gray-200 ml-3 px-2'>
   {
     experience.map((experience, index) => (
-      <li class="mb-10 ms-6">
+      <li class='mb-10 ms-6'>
         <ExperienceItem {...experience} isLatest={index === 0} />
       </li>
     ))

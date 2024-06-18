@@ -1,63 +1,62 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from '../layouts/Layout.astro'
 
-import Experience from "../components/Experience.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import Briefcase from "../components/icons/Briefcase.astro";
-import CodeIcon from "../components/icons/Code.astro";
-import Projects from "../components/Projects.astro";
-import AboutMe from "../components/AboutMe.astro";
-import Hero from "../components/Hero.astro";
-import Settings from "../components/icons/Settings.astro";
-import Techs from "../components/Stack.astro";
+import Experience from '../components/Experience.astro'
+import SectionContainer from '../components/SectionContainer.astro'
+import Briefcase from '../components/icons/Briefcase.astro'
+import CodeIcon from '../components/icons/Code.astro'
+import Projects from '../components/Projects.astro'
+import AboutMe from '../components/AboutMe.astro'
+import Hero from '../components/Hero.astro'
+import Settings from '../components/icons/Settings.astro'
+import Techs from '../components/Stack.astro'
 ---
 
 <Layout
-  title="Portfolio Raül Garrigós | Desarrollador y Programador Web FullStack"
-  description="Contrata a Raül Garrigós para desarrollar tu aplicación web. Especializado en crear aplicaciones FullStack con JavaScript, MongoDB, Express, React y NodeJs"
-  ,
+  title='Portfolio Raül Garrigós | Desarrollador y Programador Web FullStack'
+  description='Contrata a Raül Garrigós para desarrollar tu aplicación web. Especializado en crear aplicaciones FullStack con JavaScript, MongoDB, Express, React y NodeJs'
 >
-  <main class="px-4">
-    <SectionContainer class="mt-5 py-16 md:py-40">
+  <main class='px-4'>
+    <SectionContainer class='mt-5 py-16 md:py-40'>
       <Hero />
     </SectionContainer>
 
-    <div class="space-y-24">
-      <SectionContainer id="proyectos">
+    <div class='space-y-24'>
+      <SectionContainer id='proyectos'>
         <h2
-          class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white"
+          class='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white'
         >
-          <CodeIcon class="size-7" />
+          <CodeIcon class='size-7' />
           Proyectos
         </h2>
         <Projects />
       </SectionContainer>
 
-      <SectionContainer id="experiencia">
+      <SectionContainer id='experiencia'>
         <h2
-          class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white"
+          class='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white'
         >
-          <Briefcase class="size-7" />
+          <Briefcase class='size-7' />
           Experiencia laboral
         </h2>
         <Experience />
       </SectionContainer>
 
-      <SectionContainer id="sobre-mi">
+      <SectionContainer id='sobre-mi'>
         <h2
-          class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white"
+          class='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white'
         >
-          <Briefcase class="size-7" />
+          <Briefcase class='size-7' />
           Sobre mí
         </h2>
         <AboutMe />
       </SectionContainer>
 
-      <SectionContainer id="tech">
+      <SectionContainer id='tech'>
         <h2
-          class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white"
+          class='flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white'
         >
-          <Settings class="size-7" />
+          <Settings class='size-7' />
           Stack
         </h2>
         <Techs />
