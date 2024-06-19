@@ -1,5 +1,6 @@
 ---
 import LinkInLine from './LinkInLine.astro'
+import LinkButton from './LinkButton.astro'
 
 interface Props {
   title: string
@@ -46,10 +47,8 @@ const { title, description, link, company, date } = Astro.props
 <p class='mb-4 text-base font-normal text-gray-200 text-pretty'>
   {description}
 </p>
-{
-  link && (
-    <LinkInLine href={link}>
-      Saber más{' '}
+{link && <LinkButton href={link}> 
+    Saber más{' '}
       <svg
         xmlns='http://www.w3.org/2000/svg'
         class='w-5 icon icon-tabler icon-tabler-chevron-right'
@@ -67,6 +66,6 @@ const { title, description, link, company, date } = Astro.props
           <path d='M9 6l6 6l-6 6' />
         </>
       </svg>
-    </LinkInLine>
-  )
+</LinkButton>
 }
+

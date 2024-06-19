@@ -7,6 +7,9 @@ import React from './icons/React.astro'
 import MongoDB from './icons/MongoDB.astro'
 import NodeJS from './icons/NodeJS.astro'
 import TailwindCSS from './icons/TailwindCSS.astro'
+import LinkButton from "./LinkButton.astro"
+import GitHub from "../components/icons/GitHub.astro"
+import WebIcon from "../components/icons/WebIcon.astro"
 
 const tags = {
   HTML: {
@@ -90,34 +93,27 @@ const projects = [
 ]
 ---
 
-<div class='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6'>
+<section class='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6'>
   {
     projects.map(({ title, description, tags, image, link, github }, index) => (
       <article
-        class={`bg-[#43229C]/50 rounded shadow-white/10 shadow-xl col-span-2 ${index === 2 && 'md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 md:col-span-4 lg:col-span-4'}`}
+      class={`bg-[#43229C]/50 rounded shadow-white/10 shadow-xl col-span-2 ${index === 2 && 'md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 md:col-span-4 lg:col-span-4'}`}
       >
         <div
           class={`${index === 2 && 'md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 md:col-span-2 lg:col-span-4'}`}
-        >
+          >
           <a href={link} target='_blank' rel='noopener noreferrer'>
             <img
               class={`rounded shadow-2xl shadow-white/10 mb-2 ${index === 2 && 'h-full object-cover'}`}
               src={image}
               alt={`Captura de pantalla del proyecto ${title}`}
-            />
+              />
+          </a>
             <div class='p-3'>
               <h3 class='text-lg font-semibold text-yellow-200 mb-2'>
                 {title}
               </h3>
               <p class='text-m mb-4 text-pretty'>{description}</p>
-              <a
-                class='bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded'
-                href={github}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                GitHub
-              </a>
               <ul class='flex gap-x-3 flex-row flex-wrap mt-4 -ml-1'>
                 {tags.map((tag) => (
                   <li>
@@ -130,10 +126,20 @@ const projects = [
                   </li>
                 ))}
               </ul>
+              <div class="flex gap-x-4 mt-3 -ml-4">
+              <LinkButton href={github}>
+              <GitHub class="size-6"/>
+              Ver código fuente
+              </LinkButton>
+
+              <LinkButton href={link}>
+              <WebIcon class="size-6"/>
+              Ver web
+              </LinkButton>
+              </div>
             </div>
-          </a>
         </div>
       </article>
     ))
   }
-</div>
+</section>
