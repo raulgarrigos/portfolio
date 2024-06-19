@@ -1,67 +1,67 @@
 ---
-import HTML from './icons/HTML.astro'
-import JavaScript from './icons/JavaScript.astro'
-import CSS from './icons/CSS.astro'
-import Bootstrap from './icons/Bootstrap.astro'
-import React from './icons/React.astro'
-import MongoDB from './icons/MongoDB.astro'
-import NodeJS from './icons/NodeJS.astro'
-import TailwindCSS from './icons/TailwindCSS.astro'
-import LinkButton from "./LinkButton.astro"
-import GitHub from "../components/icons/GitHub.astro"
-import WebIcon from "../components/icons/WebIcon.astro"
+import HTML from "./icons/HTML.astro";
+import JavaScript from "./icons/JavaScript.astro";
+import CSS from "./icons/CSS.astro";
+import Bootstrap from "./icons/Bootstrap.astro";
+import React from "./icons/React.astro";
+import MongoDB from "./icons/MongoDB.astro";
+import NodeJS from "./icons/NodeJS.astro";
+import TailwindCSS from "./icons/TailwindCSS.astro";
+import LinkButton from "./LinkButton.astro";
+import GitHub from "../components/icons/GitHub.astro";
+import WebIcon from "../components/icons/WebIcon.astro";
 
 const tags = {
   HTML: {
-    name: 'HTML',
-    class: 'bg-[#E54C21] text-white font-semibold',
-    icon: HTML
+    name: "HTML",
+    class: "bg-[#E54C21] text-white font-semibold",
+    icon: HTML,
   },
   JavaScript: {
-    name: 'JavaScript',
-    class: 'bg-[#EFD81D] text-black font-semibold',
-    icon: JavaScript
+    name: "JavaScript",
+    class: "bg-[#EFD81D] text-black font-semibold",
+    icon: JavaScript,
   },
   CSS: {
-    name: 'CSS',
-    class: 'bg-[#264DE4] text-white font-semibold',
-    icon: CSS
+    name: "CSS",
+    class: "bg-[#264DE4] text-white font-semibold",
+    icon: CSS,
   },
   Bootstrap: {
-    name: 'Bootstrap',
-    class: 'bg-[#7B11F3] text-white font-semibold',
-    icon: Bootstrap
+    name: "Bootstrap",
+    class: "bg-[#7B11F3] text-white font-semibold",
+    icon: Bootstrap,
   },
   React: {
-    name: 'React',
-    class: 'bg-[#0C9FCB] text-white font-semibold',
-    icon: React
+    name: "React",
+    class: "bg-[#0C9FCB] text-white font-semibold",
+    icon: React,
   },
   MongoDB: {
-    name: 'MongoDB',
-    class: 'bg-[#006849] text-white font-semibold',
-    icon: MongoDB
+    name: "MongoDB",
+    class: "bg-[#006849] text-white font-semibold",
+    icon: MongoDB,
   },
   NodeJS: {
-    name: 'NodeJS',
-    class: 'bg-[#68A063] text-white font-semibold',
-    icon: NodeJS
+    name: "NodeJS",
+    class: "bg-[#68A063] text-white font-semibold",
+    icon: NodeJS,
   },
   TailwindCSS: {
-    name: 'TailwindCSS',
-    class: 'bg-[#38BDF8] text-white font-semibold',
-    icon: TailwindCSS
-  }
-}
+    name: "TailwindCSS",
+    class: "bg-[#38BDF8] text-white font-semibold",
+    icon: TailwindCSS,
+  },
+};
 
 const projects = [
   {
-    title: 'Clapperboard',
+    title: "Clapperboard",
     description:
-      'Proyecto final para el bootcamp de Ironhack. Página web para los amantes del cine para que puedan escribir reviews, crear listas personalizadas de películas y ver listas de otros usuarios. Conectada con una API.',
-    link: 'https://clapperboard-app.netlify.app/',
-    github: 'https://github.com/raulgarrigos/clapperboard-client',
-    image: '/projects/clapperboard.webp',
+      "Proyecto final para el bootcamp de Ironhack. Página web para los amantes del cine para que puedan escribir reviews, crear listas personalizadas de películas y ver listas de otros usuarios. Conectada con una API.",
+    link: "https://clapperboard-app.netlify.app/",
+    github: "https://github.com/raulgarrigos/clapperboard-client",
+    image: "/projects/clapperboard.webp",
     tags: [
       tags.HTML,
       tags.CSS,
@@ -69,75 +69,73 @@ const projects = [
       tags.NodeJS,
       tags.React,
       tags.MongoDB,
-      tags.Bootstrap
-    ]
+      tags.Bootstrap,
+    ],
   },
   {
-    title: 'Marketplayr',
+    title: "Marketplayr",
     description:
-      'Segundo proyecto para el bootcamp de Ironhack. Creada la página para un marketplace sobre videojuegos para que los usuarios puedan comprar y vender videojuegos y así estimular el mercado de videojuegos físico.',
-    link: 'https://marketplayr.adaptable.app/',
-    github: 'https://github.com/raulgarrigos/marketplayr',
-    image: '/projects/marketplayr.webp',
-    tags: [tags.HTML, tags.CSS, tags.JavaScript, tags.NodeJS, tags.MongoDB]
+      "Segundo proyecto para el bootcamp de Ironhack. Creada la página para un marketplace sobre videojuegos para que los usuarios puedan comprar y vender videojuegos y así estimular el mercado de videojuegos físico.",
+    link: "https://marketplayr.adaptable.app/",
+    github: "https://github.com/raulgarrigos/marketplayr",
+    image: "/projects/marketplayr.webp",
+    tags: [tags.HTML, tags.CSS, tags.JavaScript, tags.NodeJS, tags.MongoDB],
   },
   {
-    title: 'The Cat Thief',
+    title: "The Cat Thief",
     description:
       "Primer proyecto para el bootcamp de Ironhack. Videojuego shoot'em up clásico en el que puedes controlar un gato. Cuenta con 5 niveles de dificultad a medida que avanzas. Tu objetivo es esquivar/disparar los obstáculos para ganar puntos y llegar a los 100.",
-    link: 'https://raulgarrigos.github.io/the-cat-thief/',
-    github: 'https://github.com/raulgarrigos/the-cat-thief',
-    image: '/projects/thecatthief.webp',
-    tags: [tags.HTML, tags.CSS, tags.JavaScript]
-  }
-]
+    link: "https://raulgarrigos.github.io/the-cat-thief/",
+    github: "https://github.com/raulgarrigos/the-cat-thief",
+    image: "/projects/thecatthief.webp",
+    tags: [tags.HTML, tags.CSS, tags.JavaScript],
+  },
+];
 ---
 
-<section class='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6'>
+<section class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6">
   {
     projects.map(({ title, description, tags, image, link, github }, index) => (
       <article
-      class={`bg-[#43229C]/50 rounded shadow-white/10 shadow-xl col-span-2 ${index === 2 && 'md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 md:col-span-4 lg:col-span-4'}`}
+        class={`bg-[#43229C]/50 rounded shadow-white/10 shadow-xl col-span-2 ${index === 2 && "md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 md:col-span-4 lg:col-span-4"}`}
       >
         <div
-          class={`${index === 2 && 'md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 md:col-span-2 lg:col-span-4'}`}
-          >
-          <a href={link} target='_blank' rel='noopener noreferrer'>
+          class={`${index === 2 && "md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 md:col-span-2 lg:col-span-4"}`}
+        >
+          <a href={link} target="_blank" rel="noopener noreferrer">
             <img
-              class={`rounded shadow-2xl shadow-white/10 mb-2 ${index === 2 && 'h-full object-cover'}`}
+              class={`rounded shadow-2xl shadow-white/10 mb-2 ${index === 2 && "h-full object-cover"}`}
               src={image}
               alt={`Captura de pantalla del proyecto ${title}`}
-              />
+            />
           </a>
-            <div class='p-3'>
-              <h3 class='text-lg font-semibold text-yellow-200 mb-2'>
-                {title}
-              </h3>
-              <p class='text-m mb-4 text-pretty'>{description}</p>
-              <ul class='flex gap-x-3 flex-row flex-wrap mt-4 -ml-1'>
-                {tags.map((tag) => (
-                  <li>
-                    <span
-                      class={`flex gap-x-1 rounded-full text-xs ${tag.class} py-2 px-3 m-1`}
-                    >
-                      <tag.icon class='size-4' />
-                      {tag.name}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <div class="flex gap-x-4 mt-3 -ml-4">
+          <div class="p-3">
+            <h3 class="text-lg font-semibold text-yellow-200 mb-2">{title}</h3>
+            <p class="text-m mb-4 text-pretty">{description}</p>
+            <ul class="flex gap-x-3 flex-row flex-wrap mt-4 -ml-1">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-1 rounded-full text-xs ${tag.class} py-2 px-3 m-1`}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <div class="flex gap-x-4 mt-3">
               <LinkButton href={github}>
-              <GitHub class="size-6"/>
-              Ver código fuente
+                <GitHub class="size-4 md:size-6" />
+                Ver código fuente
               </LinkButton>
 
               <LinkButton href={link}>
-              <WebIcon class="size-6"/>
-              Ver web
+                <WebIcon class="size-4 md:size-6" />
+                Ver web
               </LinkButton>
-              </div>
             </div>
+          </div>
         </div>
       </article>
     ))
