@@ -96,48 +96,52 @@ const projects = [
 <section class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6">
   {
     projects.map(({ title, description, tags, image, link, github }, index) => (
-      <article
-        class={`bg-[#43229C]/50 rounded shadow-white/10 shadow-xl col-span-2 ${index === 2 && "md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 md:col-span-4 lg:col-span-4"}`}
+      <div
+        class={`relative overflow-hidden rounded-xl border border-gray-800 p-[1px] backdrop-blur-3xl col-span-2 ${index === 2 && "md:col-span-4 lg:col-span-4"}`}
       >
-        <div
-          class={`${index === 2 && "md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 md:col-span-2 lg:col-span-4"}`}
-        >
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <img
-              class={`rounded shadow-2xl shadow-white/10 mb-2 ${index === 2 && "h-full object-cover"}`}
-              src={image}
-              alt={`Captura de pantalla del proyecto ${title}`}
-            />
-          </a>
-          <div class="p-3">
-            <h3 class="text-lg font-semibold text-yellow-200 mb-2">{title}</h3>
-            <p class="text-m mb-4 text-pretty">{description}</p>
-            <ul class="flex gap-x-3 flex-row flex-wrap mt-4 -ml-1">
-              {tags.map((tag) => (
-                <li>
-                  <span
-                    class={`flex gap-x-1 rounded-full text-xs ${tag.class} py-2 px-3 m-1`}
-                  >
-                    <tag.icon class="size-4" />
-                    {tag.name}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <div class="flex gap-x-4 mt-3">
-              <LinkButton href={github}>
-                <GitHub class="size-4 md:size-6" />
-                Ver código fuente
-              </LinkButton>
-
-              <LinkButton href={link}>
-                <WebIcon class="size-4 md:size-6" />
-                Ver web
-              </LinkButton>
+        <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+        <div class="relative h-full w-full rounded-xl bg-gray-950 text-sm font-medium text-gray-50 backdrop-blur-3xl">
+          <article
+            class={`relative ${index === 2 && "md:grid lg:grid md:grid-cols-2 lg:grid-cols-2"}`}
+          >
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <img
+                class={`rounded mb-2 ${index === 2 && "h-full object-cover"}`}
+                src={image}
+                alt={`Captura de pantalla del proyecto ${title}`}
+              />
+            </a>
+            <div class="p-3">
+              <h3 class="text-lg font-semibold text-yellow-200 mb-2">
+                {title}
+              </h3>
+              <p class="text-base mb-4 text-pretty">{description}</p>
+              <ul class="flex gap-x-3 flex-row flex-wrap mt-4 -ml-1">
+                {tags.map((tag) => (
+                  <li>
+                    <span
+                      class={`flex gap-x-1 rounded-full text-xs ${tag.class} py-2 px-3 m-1`}
+                    >
+                      <tag.icon class="size-4" />
+                      {tag.name}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <div class="flex gap-x-4 mt-3">
+                <LinkButton href={github}>
+                  <GitHub class="size-4 md:size-6" />
+                  Ver código fuente
+                </LinkButton>
+                <LinkButton href={link}>
+                  <WebIcon class="size-4 md:size-6" />
+                  Ver web
+                </LinkButton>
+              </div>
             </div>
-          </div>
+          </article>
         </div>
-      </article>
+      </div>
     ))
   }
 </section>

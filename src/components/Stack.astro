@@ -1,132 +1,132 @@
 ---
-import HTML from './logos/HTMLLogo.astro'
-import JavaScript from './logos/JavaScriptLogo.astro'
-import CSS from './logos/CSSLogo.astro'
-import Bootstrap from './logos/BootstrapLogo.astro'
-import React from './logos/ReactLogo.astro'
-import MongoDB from './logos/MongoDBLogo.astro'
-import NodeJS from './logos/NodeJSLogo.astro'
-import TailwindCSS from './logos/TailwindCSSLogo.astro'
-import AstroLogo from './logos/AstroLogo.astro'
-import ExpressJS from './logos/ExpressJSLogo.astro'
-import Python from './logos/PythonLogo.astro'
-import TypeScript from './logos/TypeScriptLogo.astro'
-import Docker from './logos/DockerLogo.astro'
-import PHP from './logos/PHPLogo.astro'
-import Laravel from './logos/LaravelLogo.astro'
-import MySQL from './logos/MySQLLogo.astro'
-import NextJS from './logos/NextJSLogo.astro'
-import SASS from './logos/SASSLogo.astro'
-import Git from './logos/GitLogo.astro'
-import GitHub from './logos/GitHubLogo.astro'
-import Npm from './logos/NpmLogo.astro'
-import VSCode from './logos/VSCodeLogo.astro'
-import Vue from './logos/VueLogo.astro'
-import Angular from './logos/AngularLogo.astro'
+import HTML from "./logos/HTMLLogo.astro";
+import JavaScript from "./logos/JavaScriptLogo.astro";
+import CSS from "./logos/CSSLogo.astro";
+import Bootstrap from "./logos/BootstrapLogo.astro";
+import React from "./logos/ReactLogo.astro";
+import MongoDB from "./logos/MongoDBLogo.astro";
+import NodeJS from "./logos/NodeJSLogo.astro";
+import TailwindCSS from "./logos/TailwindCSSLogo.astro";
+import AstroLogo from "./logos/AstroLogo.astro";
+import ExpressJS from "./logos/ExpressJSLogo.astro";
+import Python from "./logos/PythonLogo.astro";
+import TypeScript from "./logos/TypeScriptLogo.astro";
+import Docker from "./logos/DockerLogo.astro";
+import PHP from "./logos/PHPLogo.astro";
+import Laravel from "./logos/LaravelLogo.astro";
+import MySQL from "./logos/MySQLLogo.astro";
+import NextJS from "./logos/NextJSLogo.astro";
+import SASS from "./logos/SASSLogo.astro";
+import Git from "./logos/GitLogo.astro";
+import GitHub from "./logos/GitHubLogo.astro";
+import Npm from "./logos/NpmLogo.astro";
+import VSCode from "./logos/VSCodeLogo.astro";
+import Vue from "./logos/VueLogo.astro";
+import Angular from "./logos/AngularLogo.astro";
 
 const tags = {
   HTML: {
-    name: 'HTML',
-    icon: HTML
+    name: "HTML",
+    icon: HTML,
   },
   JavaScript: {
-    name: 'JavaScript',
-    icon: JavaScript
+    name: "JavaScript",
+    icon: JavaScript,
   },
   CSS: {
-    name: 'CSS',
-    icon: CSS
+    name: "CSS",
+    icon: CSS,
   },
   Bootstrap: {
-    name: 'Bootstrap',
-    icon: Bootstrap
+    name: "Bootstrap",
+    icon: Bootstrap,
   },
   React: {
-    name: 'React',
-    icon: React
+    name: "React",
+    icon: React,
   },
   MongoDB: {
-    name: 'MongoDB',
-    icon: MongoDB
+    name: "MongoDB",
+    icon: MongoDB,
   },
   NodeJS: {
-    name: 'NodeJS',
-    icon: NodeJS
+    name: "NodeJS",
+    icon: NodeJS,
   },
   TailwindCSS: {
-    name: 'TailwindCSS',
-    icon: TailwindCSS
+    name: "TailwindCSS",
+    icon: TailwindCSS,
   },
   AstroLogo: {
-    name: 'Astro',
-    icon: AstroLogo
+    name: "Astro",
+    icon: AstroLogo,
   },
   ExpressJS: {
-    name: 'ExpressJS',
-    icon: ExpressJS
+    name: "ExpressJS",
+    icon: ExpressJS,
   },
   Python: {
-    name: 'Python',
-    icon: Python
+    name: "Python",
+    icon: Python,
   },
   TypeScript: {
-    name: 'TypeScript',
-    icon: TypeScript
+    name: "TypeScript",
+    icon: TypeScript,
   },
   Docker: {
-    name: 'Docker',
-    icon: Docker
+    name: "Docker",
+    icon: Docker,
   },
   PHP: {
-    name: 'PHP',
-    icon: PHP
+    name: "PHP",
+    icon: PHP,
   },
   Laravel: {
-    name: 'Laravel',
-    icon: Laravel
+    name: "Laravel",
+    icon: Laravel,
   },
   MySQL: {
-    name: 'MySQL',
-    icon: MySQL
+    name: "MySQL",
+    icon: MySQL,
   },
   NextJS: {
-    name: 'NextJS',
-    icon: NextJS
+    name: "NextJS",
+    icon: NextJS,
   },
   SASS: {
-    name: 'SASS',
-    icon: SASS
+    name: "SASS",
+    icon: SASS,
   },
   Git: {
-    name: 'Git',
-    icon: Git
+    name: "Git",
+    icon: Git,
   },
   GitHub: {
-    name: 'GitHub',
-    icon: GitHub
+    name: "GitHub",
+    icon: GitHub,
   },
   npm: {
-    name: 'npm',
-    icon: Npm
+    name: "npm",
+    icon: Npm,
   },
   VSCode: {
-    name: 'VSCode',
-    icon: VSCode
+    name: "VSCode",
+    icon: VSCode,
   },
   Vue: {
-    name: 'Vue',
-    icon: Vue
+    name: "Vue",
+    icon: Vue,
   },
   Angular: {
-    name: 'Angular',
-    icon: Angular
-  }
-}
+    name: "Angular",
+    icon: Angular,
+  },
+};
 
 const stacks = [
   {
-    title: 'Frontend',
-    color: 'from-yellow-500 to-white',
+    title: "Frontend",
+    color: "from-yellow-500 to-white",
     tags: [
       tags.HTML,
       tags.CSS,
@@ -134,17 +134,17 @@ const stacks = [
       tags.React,
       tags.TailwindCSS,
       tags.AstroLogo,
-      tags.Bootstrap
-    ]
+      tags.Bootstrap,
+    ],
   },
   {
-    title: 'Backend',
-    color: 'from-red-500 to-white',
-    tags: [tags.JavaScript, tags.NodeJS, tags.ExpressJS, tags.MongoDB]
+    title: "Backend",
+    color: "from-red-500 to-white",
+    tags: [tags.JavaScript, tags.NodeJS, tags.ExpressJS, tags.MongoDB],
   },
   {
-    title: 'Interesado',
-    color: 'from-blue-500 to-white',
+    title: "Interesado",
+    color: "from-blue-500 to-white",
     tags: [
       tags.Vue,
       tags.Angular,
@@ -153,35 +153,40 @@ const stacks = [
       tags.Laravel,
       tags.NextJS,
       tags.MySQL,
-      tags.SASS
-    ]
+      tags.SASS,
+    ],
   },
   {
-    title: 'Herramientas',
-    color: 'from-green-500 to-white',
-    tags: [tags.Git, tags.GitHub, tags.npm, tags.VSCode]
-  }
-]
+    title: "Herramientas",
+    color: "from-green-500 to-white",
+    tags: [tags.Git, tags.GitHub, tags.npm, tags.VSCode],
+  },
+];
 ---
 
-<div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6'>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
   {
     stacks.map(({ title, color, tags }) => (
-      <article class='relative bg-[#43229C]/20 p-6 rounded shadow-white/10 shadow-xl'>
-        <h3
-          class={`text-center mb-8 text-3xl font-semibold bg-gradient-to-r ${color} text-transparent bg-clip-text mb-2`}
-        >
-          {title}
-        </h3>
-        <ul class='grid grid-cols-3 gap-4'>
-          {tags.map((tag) => (
-            <li class='rounded-2xl group flex flex-col justify-center items-center'>
-              <tag.icon class='size-12 mb-2' />
-              <span class='text-sm font-semibold'> {tag.name}</span>
-            </li>
-          ))}
-        </ul>
-      </article>
+      <div class="relative overflow-hidden rounded-xl border border-gray-800 p-[1px] backdrop-blur-3xl">
+        <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+        <div class="flex h-full w-full justify-center rounded-xl bg-gray-950 px-3 py-1 text-sm font-medium text-gray-50 backdrop-blur-3xl">
+          <article class="relative p-6 rounded w-full">
+            <h3
+              class={`text-center mb-8 text-3xl font-semibold bg-gradient-to-r ${color} text-transparent bg-clip-text mb-2`}
+            >
+              {title}
+            </h3>
+            <ul class="grid grid-cols-3 gap-4">
+              {tags.map((tag) => (
+                <li class="rounded-2xl group flex flex-col justify-center items-center">
+                  <tag.icon class="size-12 mb-2" />
+                  <span class="text-sm font-semibold"> {tag.name}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        </div>
+      </div>
     ))
   }
 </div>
