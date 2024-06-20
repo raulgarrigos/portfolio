@@ -24,16 +24,14 @@ import SocialPill from "../components/SocialPill.astro";
   <div class="md:order-2">
     <h2 class="text-xl sm:text-2xl text-yellow-100/80">FullStack Developer</h2>
   </div>
-  <div class="flex flex-row-reverse md:order-3 md:flex md:flex-row-reverse">
+  <div class="flex flex-row-reverse md:order-3">
     <img
-      class="rounded-full shadow-lg size-24 lg:size-52 md:size-40 mt-3 md:m-5 md:-mt-12"
+      class="rounded-full shadow-lg size-24 md:size-40 lg:size-52 mt-3 md:m-5 md:-mt-12"
       src="/raulgarrigos.webp"
       alt={personalImageAlt}
     />
-    <div>
-      <p
-        class="mt-4 ml-2 md:ml-0 text-base pr-4 md:text-lg lg:text-xl text-gray-400"
-      >
+    <div class="">
+      <p class="mt-4 md:ml-0 text-sm pr-4 md:text-lg lg:text-2xl text-gray-400">
         +7 años de experiencia como Content y Catalog Specialist. Un día decidí
         cambiar de rumbo y me embarqué en el Desarrollo Web. <span
           class="text-yellow-300/90"
@@ -41,7 +39,7 @@ import SocialPill from "../components/SocialPill.astro";
           Especializado en crear aplicaciones web desde cero.
         </span> De Barcelona.
       </p>
-      <nav class="flex mt-4 md:mt-6 gap-x-2 md:gap-x-4">
+      <nav class="flex mt-4 md:mt-6 gap-x-3 flex-wrap">
         <SocialPill href="https://www.linkedin.com/in/raul-garrigos/">
           <LinkedInIcon class="size-4 md:size-6 fill-black" />
           LinkedIn
